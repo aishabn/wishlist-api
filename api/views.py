@@ -19,5 +19,5 @@ class ItemDetailView(RetrieveAPIView):
 	serializer_class = ItemDetailSerializer
 	lookup_field = 'id'
 	lookup_url_kwarg = 'item_id'
-	# permission_classes = [IsUser,]
+	permission_classes = [IsUser,]
 
